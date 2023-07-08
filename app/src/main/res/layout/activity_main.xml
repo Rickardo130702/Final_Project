@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Logo"/>
+
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Notification"
+            android:layout_marginLeft="260dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi saat ini"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Location"
+        android:layout_marginTop="8dp"
+        android:paddingTop="2dp"/>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta, Sleman"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Search"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/Primary1">
+
+        <ImageView
+            android:id="@+id/iconsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/Search"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari Tempat Makan pilihan anda..."
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kategori"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <RelativeLayout
+        android:id="@+id/Kategori"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/Burjo"
+            android:layout_width="64dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iconburjo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burjo"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Burjo"
+                android:textSize="11dp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Angkringan"
+            android:layout_width="96dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_toRightOf="@+id/Burjo"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iconangkringan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/angkringan"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angkringan"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Bakpia"
+            android:layout_width="75dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_toRightOf="@+id/Angkringan"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iconbapia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bakpia"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bakpia"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Kafe"
+            android:layout_width="62dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/kafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/Kafe"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kafe"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Kfc"
+            android:layout_width="62dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/Kafe"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/kfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kfc"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KFC"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BurgerKing"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/Kfc"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/burgerking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burger_king"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger King"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/McDonals"
+            android:layout_width="98dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mcdonals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mcdonalds"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="McDonals"
+                android:layout_marginTop="6dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Pizzahut"
+            android:layout_width="87dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_toRightOf="@+id/McDonals"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pizzahut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pizza_hut"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Hut"
+                android:layout_marginTop="6dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Bintang5"
+            android:layout_width="91dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_toRightOf="@+id/Pizzahut"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bintang5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bintang5"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bintang 5"
+                android:layout_marginTop="6dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Seafood"
+            android:layout_width="161dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="96dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/seafood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seafood"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah makan Seafood"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Padang"
+            android:layout_width="161dp"
+            android:layout_height="24dp"
+            android:background="@color/Primary1"
+            android:layout_toRightOf="@+id/Seafood"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="96dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/padang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/padang"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah makan Padang"
+                android:layout_marginTop="4dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="8dp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Story Resto"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Lt_Sekar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sekar"
+        android:layout_marginTop="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Lt_Samazana"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/samazana"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Lt_Diamond"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/diamond"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Lt_Maximilan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/maximilian"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Lt_Sixsenses"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sixsenses"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Lt_Tera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tera"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:civ_border_width="1dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tempat makan terdekat"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/burjoBorneo"
+        android:layout_width="131dp"
+        android:layout_height="212dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/borneoburjo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Burjo Borneo"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/Location"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 menit, 1.6km"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burjo"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Burjo"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="90dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.4"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/KFCSeturan"
+            android:layout_width="131dp"
+            android:layout_height="212dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kfc_seturan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="KFC Seturan Yogyakarta"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/Location"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 menit, 1.6km"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Burjo"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.4"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/RumahmknPadang"
+            android:layout_width="131dp"
+            android:layout_height="212dp"
+            android:background="@color/Primary1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/borneoburjo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Burjo Borneo"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/Location"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 menit, 1.6km"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Burjo"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="90dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.4"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
