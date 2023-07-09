@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape xmlns:android="http://schemas.android.com/apk/res/android">
-        <solid android:color="#Primary1"/> <!-- Ganti warna latar belakang di sini -->
-        <corners android:radius="16dp"/> <!-- Ubah nilai radius sesuai dengan tingkat melengkung yang Anda inginkan -->
-    </shape>
-
-</selector>
-

@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity"
+    android:paddingTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".HomeActivity"
     tools:ignore="ExtraText">
 
     <LinearLayout
@@ -19,14 +21,15 @@
             android:id="@+id/Logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/Logo"/>
+            android:src="@drawable/logo"
+            android:contentDescription="TODO" />
 
 
         <ImageView
             android:id="@+id/ivNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/Notification"
+            android:src="@drawable/notification"
             android:layout_marginLeft="260dp"/>
 
 
@@ -57,7 +60,7 @@
         android:id="@+id/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/Location"
+        android:src="@drawable/lokasi"
         android:layout_marginTop="8dp"
         android:paddingTop="2dp"/>
 
@@ -85,17 +88,21 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/Search"
+            android:src="@drawable/search"
             tools:ignore="ImageContrastCheck" />
 
 
-        <TextView
+        <EditText
             android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cari Tempat Makan pilihan anda..."
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="8dp"/>
+            android:background="@null"
+            android:hint="Cari tempat makan favorit anda"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
 
     </LinearLayout>
@@ -210,7 +217,7 @@
                 android:id="@+id/kafe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Kafe"
+                android:src="@drawable/kafe"
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="8dp"/>
 
@@ -436,62 +443,78 @@
         android:textStyle="bold"
         tools:ignore="TextSizeCheck" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <HorizontalScrollView
+        android:layout_width="398dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/Lt_Sekar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/sekar"
-        android:layout_marginTop="8dp" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/Lt_Samazana"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/samazana"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/Lt_Diamond"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/diamond"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/Lt_Maximilan"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/maximilian"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/Lt_Sixsenses"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/sixsenses"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/Lt_Tera"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/tera"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            app:civ_border_width="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Sekar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/sekar" />
 
-    </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Samazana"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/samazana" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Diamond"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/diamond" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Maximilan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/maximilian" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Sixsenses"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/sixsenses" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_Tera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tera"
+                app:civ_border_width="1dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Lt_test"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tera"
+                app:civ_border_width="1dp" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -501,6 +524,9 @@
         android:textSize="14dp"
         android:textStyle="bold"
         tools:ignore="TextSizeCheck" />
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -534,7 +560,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Location"
+                android:src="@drawable/lokasi"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="8dp"/>
 
@@ -624,7 +650,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/Location"
+                    android:src="@drawable/lokasi"
                     android:layout_marginLeft="8dp"/>
 
                 <TextView
@@ -656,6 +682,8 @@
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -710,7 +738,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/Location"
+                    android:src="@drawable/lokasi"
                     android:layout_marginTop="16dp"
                     android:layout_marginLeft="8dp"/>
 
@@ -769,7 +797,14 @@
 
 
         </LinearLayout>
+
     </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
 
 

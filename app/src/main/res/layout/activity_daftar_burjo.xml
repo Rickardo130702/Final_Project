@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".DaftarBurjoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="Burjo"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBurjoborneo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/borneo_burjo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBurjoborneo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burjo Borneo"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="8dp"/>
+
+            <ImageView
+                android:id="@+id/lokasiburjo"
+                android:layout_below="@+id/tvBurjoborneo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lokasi"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Menit, 6.7 km"
+                    android:layout_below="@+id/tvBurjoborneo"
+                    android:layout_toRightOf="@id/lokasiburjo"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/burjoikonkecil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_below="@id/lokasiburjo"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo"
+                    android:layout_below="@id/lokasiburjo"
+                    android:layout_toRightOf="@+id/burjoikonkecil"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_below="@id/lokasiburjo"
+                    android:paddingStart="160dp"
+                    android:layout_marginTop="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.4"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/lokasiburjo"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/rating"
+                    android:layout_marginLeft="4dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBurjoelephan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/burjo_elephan"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBurjoelephan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo Elephant"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/lokasiburjo2"
+                    android:layout_below="@+id/tvBurjoelephan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lokasi"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Menit, 2.8 km"
+                    android:layout_below="@+id/tvBurjoelephan"
+                    android:layout_toRightOf="@id/lokasiburjo2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/burjoikonkecil2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_below="@id/lokasiburjo2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo"
+                    android:layout_below="@id/lokasiburjo2"
+                    android:layout_toRightOf="@+id/burjoikonkecil2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_below="@id/lokasiburjo2"
+                    android:paddingStart="160dp"
+                    android:layout_marginTop="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/lokasiburjo2"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/rating2"
+                    android:layout_marginLeft="4dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBurjoandalas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/borjo_andalas"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBurjoandalas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo Andalas"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/lokasiburjo3"
+                    android:layout_below="@+id/tvBurjoandalas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lokasi"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14 Menit, 7.4 km"
+                    android:layout_below="@+id/tvBurjoandalas"
+                    android:layout_toRightOf="@id/lokasiburjo3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/burjoikonkecil3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_below="@id/lokasiburjo3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo"
+                    android:layout_below="@id/lokasiburjo3"
+                    android:layout_toRightOf="@+id/burjoikonkecil3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_below="@id/lokasiburjo3"
+                    android:paddingStart="160dp"
+                    android:layout_marginTop="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.3"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/lokasiburjo3"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/rating3"
+                    android:layout_marginLeft="4dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBurjokabita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/burjo_kabita"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBurjokabita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo Kabita"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/lokasiburjo4"
+                    android:layout_below="@+id/tvBurjokabita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lokasi"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 Menit, 7.9 km"
+                    android:layout_below="@+id/tvBurjokabita"
+                    android:layout_toRightOf="@id/lokasiburjo4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/burjoikonkecil4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_below="@id/lokasiburjo4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo"
+                    android:layout_below="@id/lokasiburjo4"
+                    android:layout_toRightOf="@+id/burjoikonkecil4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rating4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_below="@id/lokasiburjo4"
+                    android:paddingStart="160dp"
+                    android:layout_marginTop="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/lokasiburjo4"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/rating4"
+                    android:layout_marginLeft="4dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/Primary1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBurjowiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/burjo_wiss"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBurjowiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo Wiss"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/lokasiburjo5"
+                    android:layout_below="@+id/tvBurjowiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lokasi"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Menit, 9.0 km"
+                    android:layout_below="@+id/tvBurjowiss"
+                    android:layout_toRightOf="@id/lokasiburjo5"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/burjoikonkecil5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burjo"
+                    android:layout_below="@id/lokasiburjo5"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burjo"
+                    android:layout_below="@id/lokasiburjo5"
+                    android:layout_toRightOf="@+id/burjoikonkecil5"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rating5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_below="@id/lokasiburjo5"
+                    android:paddingStart="160dp"
+                    android:layout_marginTop="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.2"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/lokasiburjo5"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/rating5"
+                    android:layout_marginLeft="4dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

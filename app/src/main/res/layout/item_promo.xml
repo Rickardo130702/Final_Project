@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPromo"
+    android:elevation="4dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:animateLayoutChanges="true">
+        
+        <ImageView
+            android:id="@+id/ivpromoBurgerKing"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/burger_king_promo"/>
+
+        <TextView
+            android:id="@+id/textPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/ivpromoBurgerKing"
+            android:fontFamily="sans-serif"
+            android:text="BURGER KING PromoFRIYAY CHICKEN!Beli 8pcs Ayam Hanya Rp 88RB
+            khusus di BK APP"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
